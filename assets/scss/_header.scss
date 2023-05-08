@@ -1,5 +1,85 @@
 @include media-breakpoint(basic) {
-  
+    .header {
+        background-color: $black;
+        height: 60px;
+        & .innerheader {
+            & .profile {
+            & .userImage {
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+                & img {
+                object-fit: cover;
+                }
+            }
+            }
+            & .notification {
+            & .notificationIcon {
+                width: 20px;
+                & img {
+                transition: all 0.3s;
+                }
+                &:hover{
+                & img {
+                    filter: opacity(0.8);
+                }
+                }
+            }
+            }
+            & .matchTime{
+            font-size: 10px;
+
+            }
+        }
+        .btn-close {
+            filter: invert(1);
+            opacity: 1;
+        }
+        .brand{
+            width: 100px;
+        }
+        .buttons {
+            & .btn-edit {
+                width: 16px;
+                height: 16px;
+            }
+            & .userprofilename {
+            & .userMailAdd, & .username {
+                font-size: 12px;
+            }
+            }
+        }
+        &.profileoffcanvasHeader {
+            height: 114px;
+            & .innerheader{
+            & .profile {
+                & .userImage {
+                width: 50px;
+                height: 50px;
+                }
+            }
+            }
+            & .upload {
+            right: -10%;
+                top: 50%;
+                width: 20px;
+                height: 20px;
+            & label {
+                cursor: pointer;
+                overflow: hidden;
+                transition: all ease 0.5s;
+                pointer-events: none;
+                & img {
+                filter: invert(1);
+                }
+            }
+            & .input-file {
+                opacity: 0;
+                cursor: pointer;
+            }
+            }
+        }
+        }
 }
 @include media-breakpoint-up(sm) {}
 

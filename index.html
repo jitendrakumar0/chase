@@ -69,9 +69,84 @@
     <body>
         <main class="container-fluid">
             <div class="row mainInner bg-black">
+                <navbar class="col-12 header d-flex align-items-center px-0">
+                    <div class="row mx-0 innerheader align-items-center w-100">
+                        <div class="col-auto profile">
+                            <div class="userImage overflow-hidden"><img src="assets/img/svg/Menu.svg" class="w-100" alt="Profile"></div>
+                        </div>
+                        <div class="col px-0 fs-14 fw-semibold text-white">10Score.com</div>
+                        <div class="col-auto notification">
+                            <div class="row mx-0 gap-3 align-items-center">
+                                <div class="col-auto px-0"><a href="javascript:;" type="button" class="notificationIcon shadow-none bg-transparent p-0 border-0"><img src="assets/img/svg/bell_whire_color.png" class="w-100" alt="bell"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </navbar>
                 <div class="col-12 px-0 flex-fill" data-page-name="indexPage">
-
+                    <div class="row mx-0 h-100 flex-column flex-nowrap">
+                        <div class="col-12 py-2">
+                            <div class="card border-0 shadow-none rounded-2 position-relative bg-transparent">
+                                <div class="card-body p-0 rounded-2 overflow-hidden">
+                                    <img src="assets/img/banner.png" class="w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-0 cricketheader">
+                            <ul class="nav row mx-0 nav-pills navtab " id="pills-tab" role="tablist">
+                                <li class="nav-item col px-0" role="presentation">
+                                    <button class="nav-link py-2 rounded-0 text-white-50 w-100 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><span class="gamesheading pt1 d-flex justify-content-center">Cricket</span></button>
+                                </li>
+                                <li class="nav-item col px-0" role="presentation">
+                                    <button class="nav-link py-2 rounded-0 text-white-50 w-100" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><span class="gamesheading pt1 d-flex justify-content-center">Overs</span></button>
+                                </li>
+                                <li class="nav-item col px-0" role="presentation">
+                                    <button class="nav-link py-2 rounded-0 text-white-50 w-100" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><span class="gamesheading pt1 d-flex justify-content-center">Football</span></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 pt-2 pb-4 flex-fill h-100 overflow-y-auto bg-light">
+                            <div class="tab-content tabContents pt-3" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div class="row mx-0 cardslider mb-4">
+                                        <div class="item col-12 px-0">
+                                            <div class="card border-0 shadow-none rounded-2 position-relative bg-transparent">
+                                                <div class="card-body p-0 rounded-2 overflow-hidden">
+                                                    <img src="assets/img/banner.png" class="w-100" alt="">
+                                                    <a href="deposit-Case.html" class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <div class="row mx-0 cardslider mb-4">
+                                        <div class="item col-12 px-0">
+                                            <!-- <div class="card border-0 shadow-none rounded-2 position-relative bg-transparent">
+                                                <div class="card-body p-0 rounded-2 overflow-hidden">
+                                                    <img src="assets/svg/img/deposit.png" class="w-100" alt="">
+                                                    <a href="deposit-Case.html" class="stretched-link"></a>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                                    <div class="row mx-0">
+                                        <div class="col-12 fw-bold text-secondary fs-6 text-center mt-5 pt-5">Comming Soon...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <footer class="col-12 footer bottomBar d-flex align-items-center px-0">
+                    <div class="row mx-0 align-items-center innerBar w-100">
+                        <div class="col px-0 bottombarTabs text-center"><a href="javascript:;" class="linkTab active text-decoration-none"><div class="gameImg mx-auto mb-2"><img src="assets/img/svg/home.svg" class="h-100" alt="cricket"></div> <span class="gamesheading pt-1 d-flex justify-content-center">Home</span></a></div>
+                        <div class="col px-0 bottombarTabs text-center"><a href="javascript:;" class="linkTab text-decoration-none"><div class="gameImg mx-auto mb-2"><img src="assets/img/svg/match.svg" class="h-100" alt="cricket"></div> <span class="gamesheading pt-1 d-flex justify-content-center">Matches</span></a></div>
+                        <div class="col px-0 bottombarTabs text-center"><a href="javascript:;" class="linkTab text-decoration-none"><div class="gameImg mx-auto mb-2"><img src="assets/img/svg/home.svg" class="h-100" alt="cricket"></div> <span class="gamesheading pt-1 d-flex justify-content-center">News</span></a></div>
+                        <div class="col px-0 bottombarTabs text-center"><a href="javascript:;" class="linkTab text-decoration-none"><div class="gameImg mx-auto mb-2"><img src="assets/img/svg/home.svg" class="h-100" alt="cricket"></div> <span class="gamesheading pt-1 d-flex justify-content-center">More</span></a></div>
+                    </div>
+                </footer>
             </div>
         </main>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
