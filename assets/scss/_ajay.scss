@@ -1,0 +1,73 @@
+// ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name="signInPage"] {
+    @include media-breakpoint(basic) {
+        & .innerPage {
+            & .journeyHeading {
+                font-size: 14px;
+                line-height: 24px;
+            }
+            & .informationContent {
+                & .infoIMg {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(sm) {}
+    
+    @include media-breakpoint-up(md) {}
+    
+    @include media-breakpoint-up(lg) {}
+    
+    @include media-breakpoint-up(xl) {}
+    
+    @include media-breakpoint-up(xxl) {}
+    
+    
+    @include media-breakpoint-down(xxl) {}
+    
+    @include media-breakpoint-down(xl) {}
+    
+    @include media-breakpoint-down(lg) {}
+    
+    @include media-breakpoint-down(md) {}
+    
+    @include media-breakpoint-down(sm) {}
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=""] {}
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+// *************** [ Common Scss ] **************
+.logoImg {
+    height: 30px;
+}
+

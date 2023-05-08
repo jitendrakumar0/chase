@@ -1,6 +1,43 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
 @include media-breakpoint(basic) {
-  
+    .form{
+        & .form-floating {
+            & .form-control {
+                background-image: none;
+                height: calc(3.1rem + 2px);
+                    &:focus{
+                        border-color: $white;
+                    }
+                &:-webkit-autofill,
+                    &:-webkit-autofill:hover,
+                    &:-webkit-autofill:focus {
+                        border: none;
+                        -webkit-text-fill-color: $black;
+                        transition: background-color 5000s ease-in-out 0s;
+                    }
+            }
+        }
+        & .form-check {
+            & .form-check-input {
+                box-shadow: none;
+                border: 1px solid $white;
+                &:checked{
+                    background-color: $black;
+                }
+            }
+            & .form-check-label, & .form-check-input {
+                cursor: pointer;
+            }
+        }
+        & .input-group {
+            & .input-group-text {
+                & img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-up(sm) {}
 
