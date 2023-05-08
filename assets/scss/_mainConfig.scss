@@ -144,7 +144,9 @@
       position: relative !important;
       overflow: hidden !important;
       padding: 0px !important;
-
+      background: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)), url(../img/mainBg.jpg) no-repeat;
+      background-size: cover;
+      background-position: top center;
       &>.mainInner {
         height: 100% !important;
         border: 0 !important;
@@ -160,7 +162,26 @@
         &> [data-page-name] {
           overflow: hidden auto;
         }
+        & .downloadBtn {
+          position: fixed;
+          top: 50%;
+          right: 10%;
+        }
       }
+      &::before{
+        content: '';
+        background: url(../img/logo/whiteLogo.png) no-repeat, center;
+        width: 270px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-size: cover;
+        left: 10%;
+        top: 50%;
+      }
+
     }
 
     & .overflow-hidden-auto {
@@ -178,6 +199,25 @@
     .fs-15{font-size: 15px;}
     .fs-16{font-size: 16px;}
 
+    .android_btn {
+      border-radius: 8px;
+      background-color: $white !important;
+      transition: 0.3s;
+      &:hover {
+        background-color: darken($white, 5) !important;
+      }
+      &.forWhite {
+        background-color: $black !important;
+        &:hover {
+          background-color: lighten($black, 5) !important;
+        }
+      }
+  }
+  .ios_btn {
+      & img {
+        filter: brightness(0);
+      }
+    }
   }
 }
 
@@ -241,11 +281,58 @@
 @include media-breakpoint-up(xxl) {}
 
 
-@include media-breakpoint-down(xxl) {}
+@include media-breakpoint-down(xxl) {
+  body {
+    & main {
+      &>.mainInner {
+        &> [data-page-name] {
+        }
+        & .downloadBtn {
+          right: 5%;
+        }
+      }
+      &::before{
+        left: 5%;
+      }
+  
+    }
+  }
+}
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) {
+  body {
+    & main {
+      &>.mainInner {
+        &> [data-page-name] {
+        }
+        & .downloadBtn {
+          right: 2%;
+        }
+      }
+      &::before{
+        left: 2%;
+        width: 250px;
+      }
+  
+    }
+  }
+}
 
 @include media-breakpoint-down(lg) {
+  body {
+    & main {
+      &>.mainInner {
+        &> [data-page-name] {
+        }
+        & .downloadBtn {
+        }
+      }
+      &::before{
+        display: none;
+      }
+  
+    }
+  }
 }
 
 @include media-breakpoint-down(md) {}
