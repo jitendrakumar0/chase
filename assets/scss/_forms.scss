@@ -1,6 +1,11 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
 @include media-breakpoint(basic) {
     .form{
+        & .form-select {
+            &:focus{
+                border-color: $white;
+            }
+        }
         & .form-floating {
             & .form-control {
                 background-image: none;
