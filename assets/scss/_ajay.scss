@@ -221,6 +221,89 @@
 // ! @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
 
 // ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name="allcontest"] {
+    @include media-breakpoint(basic) {
+        & .innerbody {
+            & .contestentrys {
+                & .enteryImg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            
+            & .contestCards {
+                background: linear-gradient(0deg, lighten($black, 10) 0%, lighten($black, 4) 100%);
+                & .card-body{
+                    & .case {
+                        & .caseHeading {
+                            color: lighten($success, 5);
+                        }
+                        & .caseEntry {
+                            & span {
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(sm) {}
+    
+    @include media-breakpoint-up(md) {}
+    
+    @include media-breakpoint-up(lg) {}
+    
+    @include media-breakpoint-up(xl) {}
+    
+    @include media-breakpoint-up(xxl) {}
+    
+    
+    @include media-breakpoint-down(xxl) {}
+    
+    @include media-breakpoint-down(xl) {}
+    
+    @include media-breakpoint-down(lg) {}
+    
+    @include media-breakpoint-down(md) {}
+    
+    @include media-breakpoint-down(sm) {}
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=""] {
+
+    @include media-breakpoint(basic) {
+    }
+    @include media-breakpoint-up(sm) {}
+    
+    @include media-breakpoint-up(md) {}
+    
+    @include media-breakpoint-up(lg) {}
+    
+    @include media-breakpoint-up(xl) {}
+    
+    @include media-breakpoint-up(xxl) {}
+    
+    
+    @include media-breakpoint-down(xxl) {}
+    
+    @include media-breakpoint-down(xl) {}
+    
+    @include media-breakpoint-down(lg) {}
+    
+    @include media-breakpoint-down(md) {}
+    
+    @include media-breakpoint-down(sm) {}
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
 [data-page-name=""] {
 
     @include media-breakpoint(basic) {
@@ -357,6 +440,17 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    .contestPeogressBar {
+        &.progress {
+            height: 8px;
+            // background-color: lighten($black, 30);
+            background-color: $secondary ;
+            & .progress-bar {
+                background-color: $theme2;
+                // background: linear-gradient(90deg, lighten($theme2, 0) 0%, lighten($theme2, 10) 100%);
             }
         }
     }
