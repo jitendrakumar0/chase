@@ -171,20 +171,19 @@
           min-height: 100vh;
         }
       }
-      &::before{
-        content: '';
-        background: url(../img/logo/whiteLogo.png) no-repeat, center;
-        width: 270px;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        background-size: cover;
-        left: 10%;
-        top: 50%;
-      }
-
+      // &::before{
+      //   content: '';
+      //   background: url(../img/logo/themeLogo.png) no-repeat, center;
+      //   width: 270px;
+      //   height: 30px;
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   position: absolute;
+      //   background-size: cover;
+      //   left: 10%;
+      //   top: 50%;
+      // }
     }
 
     & .overflow-hidden-auto {
