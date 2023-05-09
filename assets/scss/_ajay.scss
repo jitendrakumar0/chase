@@ -275,9 +275,29 @@
 
 
 // ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
-[data-page-name=""] {
+[data-page-name="morePage"] {
 
     @include media-breakpoint(basic) {
+        & .innerbody{
+            & .linkingBody {
+                & .linkBox {
+                    & .tagicon {
+                        width: 22px;
+                        height: 22px;
+                    }
+                    & .linkContent {
+                        font-size: 14px;
+                        &.walletBalance {
+                            color: lighten($theme1, 10);
+                        }
+                    }
+                    transition: all ease-in-out 0.3s;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
     }
     @include media-breakpoint-up(sm) {}
     
