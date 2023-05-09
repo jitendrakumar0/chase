@@ -2,8 +2,8 @@
     .footer {
         height: 60px;
         &.bottomBar {
-            background-color: lighten($black, 5);
-        box-shadow: 0px 0px 6px rgba($white, 0.1);
+            background-color: lighten($black, 10);
+            box-shadow: 0px 0px 6px rgba($white, 0.1);
         & .innerBar {
         & .bottombarTabs {
             & .linkTab {
@@ -12,6 +12,7 @@
                 height: 20px;
                 & img {
                     transition: all 0.3s;
+                    filter: brightness(3);
                 }
             }
             & .gamesheading {

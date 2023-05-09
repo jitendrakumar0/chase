@@ -72,7 +72,7 @@
                         font-size: 12px;
                         font-weight: 600;
                         transition: all 0.3s;
-                        border-bottom: 2px solid transparent;
+                        border-bottom: 0.6px solid transparent;
                         & .gameImg {
                             height: 20px;
                             & img {
@@ -85,7 +85,7 @@
                         }
                         &.active {
                             background: transparent;
-                            border-color: $white;
+                            border-color: darken($white, 20);
                             color: $white !important;
                             & .gameImg {
                                 & img {
@@ -106,20 +106,53 @@
             }
         }
         & .tabContents{
+            & .homeUpcomingMatch {
+                & .owl-stage-outer {
+                    padding: 0px;
+                }
+                & .owl-dots {
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                    & .owl-dot {
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 6px;
+                        border: .6px solid darken($white, 20);
+                        transition: all 0.3s ease-in-out;
+                        &.active{
+                            width: 15px;
+                            background: darken($white, 20);
+                        }
+                    }
+                }
+            }
             & .matchesCard {
                 box-shadow: 0px 0px 6px rgba($black, 0.08);
+                background-color: lighten($black, 10);
                 & .card-body {
                     & .teamHeadline {
                         & .matchteams,
                         & .notificationOut {
-                            font-size: 11px;
+                            font-size: 12px;
                         }
                         & .notificationOut {
-                            color: lighten($success, 5);
+                            background: lighten($success, 5);
+                            & span{
+                                width: 4px;
+                                height: 4px;
+                                border-radius: 100%;
+                                background: $white;
+                            }
                         }
                         & .lineupsImg {
                             width: 18px;
                         }
+                    }
+                    & .teamHeadline {
+                        border-bottom: 0.6px solid rgba($secondary, 0.5);
                     }
                     & .innerBody {
                         & .leftSideTeams {
@@ -140,61 +173,13 @@
                                 }
                             }
                         }
-                        &.firstMatchBody {
-                            & .leftSideTeams {
-                                & .teamLogo {
-                                    &::before {
-                                        background: rgba($warning, 0.3);
-                                    }
-                                }
-                            }
-                            & .rightSideTeams {
-                                & .teamLogo {
-                                    &::before {
-                                        background: rgba($success, 0.3);
-                                    }
-                                }
-                            }
-                        }
-                        &.secondMatchBody {
-                            & .leftSideTeams {
-                                & .teamLogo {
-                                    &::before {
-                                        background: rgba($success, 0.3);
-                                    }
-                                }
-                            }
-                            & .rightSideTeams {
-                                & .teamLogo {
-                                    &::before {
-                                        background: rgba($info, 0.4);
-                                    }
-                                }
-                            }
-                        }
-                        &.threedMatchBody {
-                            & .leftSideTeams {
-                                & .teamLogo {
-                                    &::before {
-                                        background: rgba($info, 0.4);
-                                    }
-                                }
-                            }
-                            & .rightSideTeams {
-                                & .teamLogo {
-                                    &::before {
-                                        background: rgba($warning, 0.3);
-                                    }
-                                }
-                            }
-                        }
                         & .firstTeamsName {
                             font-size: 12px;
                         }
                         & .team {
                             & .teamLogo {
-                                width: 40px;
-                                height: 40px;
+                                width: 32px;
+                                height: 32px;
                                 z-index: 0;
                                 &::before {
                                     content: "";
@@ -206,14 +191,110 @@
                                 }
                             }
                             & .teamName {
-                                font-size: 10px;
+                                // font-size: 10px;
+                                & span {
+                                    width: 20px;
+                                    height: 20px;
+                                    & img {
+                                        filter: brightness(3);
+                                    }
+                                }
                             }
                         }
                         & .matchTimer {
                             & .pichTime {
-                                font-size: 10px;
-                                color: $theme2;
+                                font-size: 12px;
+                                color: lighten($success, 5);
                             }
+                        }
+                        &.borderBody {
+                            border-bottom: 0.6px solid rgba($secondary, 0.5);
+                        }
+                    }
+                    & .bottomBody {
+                        border-top: 0.6px solid rgba($secondary, 0.5);
+                        & .winCase {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+                &.featuredCard {
+                    & .card-body {
+                        & .teamHeadline {
+                            & .notificationOut {
+                                border: .6px solid darken($white, 20);
+                                & span {
+                                    width: 18px;
+                                    height: 18px;
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .tournamentSection {
+                background: linear-gradient(0deg, lighten($black, 1) 0%, rgba($info, 0.2) 100%);
+                & .tournamentTable {
+                    & .table {
+                        & .tbody {
+                            & tr {
+                                & td {
+                                    padding: 10px 5px;
+                                    &:nth-child(2){
+                                        & .cuntryImg {
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+                                &:nth-child(even) {
+                                    background-color: rgba($secondary, 0.5);
+                                }
+                            }
+                        }
+                    }
+                }
+                & .players {
+                    & .playerCard {
+                        margin-top: 35px;
+                        &.firstCard {
+                            background: linear-gradient(0deg, rgba($danger, 1) 0%, rgba($orange, 1) 100%);
+                            & .card-body {
+                                & .capBtn {
+                                    background-color: $orange;
+                                }
+                            }
+                        }
+                        &.secondCard {
+                            background: linear-gradient(0deg, darken($primary, 30) 0%, darken($primary, 15) 100%);
+                            & .card-body {
+                                & .capBtn {
+                                    background-color: $primary;
+                                }
+                            }
+                        }
+                        &.therdCard {
+                            background: linear-gradient(0deg, darken($warning , 30) 0%, darken($info , 15) 100%);
+                            & .card-body {
+                                & .capBtn {
+                                    background-color: darken($warning , 10);
+                                }
+                            }
+                        }
+                        & .crad-img {
+                            box-shadow: 0px 0px 8px 0px $white;
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 100px;
+                            overflow: hidden;
+                            margin-top: -35px;
+                            background-color: $black;
+                            border-bottom: 2px solid $danger;
+                        }
+                        & .card-body{
+
                         }
                     }
                 }
