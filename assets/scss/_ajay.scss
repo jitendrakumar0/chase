@@ -188,9 +188,9 @@
                             background-color: $black;
                             border-bottom: 2px solid $danger;
                         }
-                        & .card-body{
+                        // & .card-body{
 
-                        }
+                        // }
                     }
                 }
             }
@@ -474,5 +474,67 @@
             }
         }
     }
+
+    // ************ [ Quiz Information Page Start ] ******************
+    .quizInformationPage{
+        & .innerbody {
+            & .contestCards {
+                background: linear-gradient(0deg, lighten($black, 10) 0%, lighten($black, 4) 100%);
+                & .card-body{
+                    & .case {
+                        & .caseHeading {
+                            color: lighten($success, 5);
+                        }
+                        & .caseEntry {
+                            & span {
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+            & .quizUserCard {
+                // border-bottom: 0.6px solid rgba($secondary, 0.5) !important;
+                transition: all 0.3s ease-in-out;
+                position: relative;
+                z-index: 0;
+                &::before{
+                    content: '';
+                    height: 100%;
+                    width: 4px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    transition: all 0.3s ease-in-out;
+                    background: linear-gradient(0deg, lighten($black, 10) 0%, lighten($black, 4) 100%) !important;
+                }
+                & .card-body {
+                    & .userImg {
+                        width: 45px;
+                        height: 45px;
+                        border: 2px solid $white;
+                    }
+                }
+                &:hover{
+                    &::before{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .informationOffcanvas {
+        background-color: lighten($black, 10);
+        height: 40% !important;
+        & .offcanvas-body {
+            & .innerCard {
+                border-bottom: 0.6px solid rgba($secondary, 0.2);
+            }
+        }
+    }
+    //! ************ [ Quiz Information Page End ] ******************
+
 }
 
