@@ -137,7 +137,7 @@
                                                 <div class="col fs-14 text-white">David Warner</div>
                                             </div>
                                         </div>
-                                        <a href="javascript:;" class="stretched-link"></a>
+                                        <a href="javascript:;" class="stretched-link"  data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -186,7 +186,7 @@
                 <!-- * Offcanvas -->
                 <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle bottom offcanvas</button> -->
 
-                <div class="offcanvas offcanvas-bottom position-absolute informationOffcanvas" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas offcanvas-bottom position-absolute border-0 informationOffcanvas" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
                 <div class="offcanvas-header d-block">
                     <div class="offcanvas-title text-center fs-14 text-white" id="offcanvasBottomLabel">CONFIRMATION</div>
                     <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
@@ -221,8 +221,42 @@
                     </div>
                 </div>
                 <div class="offcanvas-footer text-center py-3">
-                    <button type="button" class="btn btn-primary text-white fs-14 px-5">JOIN CONTEST</button>
+                    <button type="button" class="btn btn-primary text-white fs-14 px-5" data-bs-toggle="modal" data-bs-target="#exampleModal">JOIN CONTEST</button>
                 </div>
+                </div>
+
+                <!-- * Modal -->
+                <!-- Button trigger modal -->
+                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button> -->
+
+                <!-- Modal -->
+                <div class="modal fade position-absolute border-0 setReminderModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                        <div class="modal-header d-block border-0">
+                            <div class="modal-title fs-14 text-center text-white" id="exampleModalLabel">SET REMINDER</div>
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mx-0 gx-0 gap-3">
+                                <div class="col-12"><div class="reminderImg mx-auto"><img src="assets/img/svg/fingerHeand.svg" alt="" class="w-100"></div></div>
+                                <div class="col-12 text-center text-white fs-14">Would you like to set reminder for Quiz Start?</div>
+                                <div class="col-12">
+                                    <div class="row mx-0 gx-2 justify-content-center">
+                                        <div class="col-auto fs-14 text-white-50">Before:</div>
+                                        <div class="col-auto fs-14 text-white d-flex align-items-center gap-1 timing"><span class="d-inline-flex"><img src="assets/img/svg/Timeing.svg" alt="" class="w-100"></span>1Min</div>
+                                        <div class="col-auto fs-14 text-white d-flex align-items-center gap-1 timing"><span class="d-inline-flex"><img src="assets/img/svg/Timeing.svg" alt="" class="w-100"></span>5Min</div>
+                                        <div class="col-auto fs-14 text-white d-flex align-items-center gap-1 timing"><span class="d-inline-flex"><img src="assets/img/svg/Timeing.svg" alt="" class="w-100"></span>10Min</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-0 justify-content-center">
+                            <button type="button" class="btn btn-outline-secondary fs-14 text-white px-4" data-bs-dismiss="modal">NO</button>
+                            <button type="button" class="btn btn-primary fs-14  px-4 text-white">YES</button>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

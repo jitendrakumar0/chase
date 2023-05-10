@@ -526,11 +526,27 @@
         }
     }
     .informationOffcanvas {
-        background-color: lighten($black, 10);
         height: 40% !important;
         & .offcanvas-body {
             & .innerCard {
                 border-bottom: 0.6px solid rgba($secondary, 0.2);
+            }
+        }
+    }
+    .setReminderModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-body {
+                    & .reminderImg {
+                        width: 50px;
+                    }
+                    & .timing {
+                        & span {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
             }
         }
     }
