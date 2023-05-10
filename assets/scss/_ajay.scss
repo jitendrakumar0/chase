@@ -551,6 +551,71 @@
         }
     }
     //! ************ [ Quiz Information Page End ] ******************
+    // ************* [ QuestionPage Page Start ] ******************
+    .questionPage{
+        & .navtab {
+            & .nav-item {
+                & .nav-link {
+                    font-size: 14px;
+                    font-weight: 600;
+                    transition: all 0.3s;
+                    border-bottom: 0.6px solid transparent;
+                    & .gameImg {
+                        height: 20px;
+                        & img {
+                            filter: grayscale(1);
+                            transition: all 0.3s;
+                        }
+                    }
+                    & .gamesheading {
+                        line-height: 100%;
+                    }
+                    &.active {
+                        background: transparent;
+                        border-color: darken($white, 20);
+                        color: $white !important;
+                        & .gameImg {
+                            & img {
+                                filter: grayscale(0);
+                            }
+                        }
+                    }
+                    &:hover {
+                        color: $white !important;
+                        & .gameImg {
+                            & img {
+                                filter: grayscale(0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabContents  {
+            & .questionAccordion {
+                & .accordion-item {
+                    & .accordion-header {
+                        & .accordion-button {
+                            background-color: lighten($black, 10);
+                            &::after{
+                                background-image: url(../img/svg/downarrow.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                    & .accordion-body {
+                        background-color: lighten($black, 15);
+                        & .answarcard {
+                            border: .6px solid $light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //! ************* [ QuestionPage Page End ] ******************
 
 }
 
