@@ -523,6 +523,7 @@
         }
     }
     .informationOffcanvas {
+        background-color: lighten($black, 20) !important;
         height: 40% !important;
         & .offcanvas-body {
             & .innerCard {
@@ -533,6 +534,7 @@
     .setReminderModal {
         & .modal-dialog {
             & .modal-content {
+                background-color: lighten($black, 20) !important;
                 & .modal-body {
                     & .reminderImg {
                         width: 50px;

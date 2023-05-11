@@ -198,7 +198,7 @@
 
 
 .modal-content, .offcanvas {
-  background-color: lighten($black, 20);
+  background-color: lighten($black, 20) !important;
 }
 
 
