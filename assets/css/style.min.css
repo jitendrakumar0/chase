@@ -985,24 +985,17 @@ body .overflow-auto-hidden {
 .kycPage .otpModal .innerModal .modal-content .modal-body .card .card-body .form-control::placeholder {
   color: #fff;
 }
-.walletTopBar .amount .walletAmount {
+.backGroundColor {
+  background: linear-gradient(0deg, rgba(9, 165, 190, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+.backGroundColor .walletTopBar .amount .walletAmount {
   font-weight: 600;
 }
-.walletTopBar .amount img {
+.backGroundColor .walletTopBar .amount img {
   height: 15px;
   padding-left: 5px;
 }
-
-.coinsBtn {
-  border: none;
-  padding: 10px 30px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.superCoinsBox img {
+.backGroundColor .superCoinsBox img {
   height: 15px;
   padding-left: 5px;
 }
@@ -1014,10 +1007,72 @@ body .overflow-auto-hidden {
   height: 100%;
 }
 
+.verificationBar .clickBtn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 15px;
+}
+.verificationBar .verification {
+  font-size: 10px;
+  color: #fff;
+}
+.verificationBar .verification:first-child::before {
+  display: none;
+}
+.verificationBar .verification::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #11ff74;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translate(-50%);
+  background-image: url(/assets/img/svg/Check.svg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.verificationBar .verification::before {
+  content: "";
+  border: 1px dashed #11ff74;
+  width: 41px;
+  height: 2px;
+  position: absolute;
+  top: -26px;
+  left: -21px;
+}
+.verificationBar .verification.completed::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #11ff74;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translate(-50%);
+  background-image: url(/assets/img/svg/Check.svg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.verificationBar .verification.completed::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #11ff74;
+  position: absolute;
+  top: -26px;
+}
+
 .walletUl .walletLi {
   background-color: #1a1a1a;
   padding: 12px 10px;
-  height: 70px;
 }
 .walletUl .walletLi .lileftTxt {
   font-size: 14px;
