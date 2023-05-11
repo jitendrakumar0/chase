@@ -147,7 +147,12 @@
     .underlines {
         border-bottom: 0.6px solid rgba($secondary, 0.5);
     }
+
+    .offcanvas-backdrop {
+        position: absolute;
+    }
 }
+
 @include media-breakpoint-up(sm) {}
 
 @include media-breakpoint-up(md) {}
