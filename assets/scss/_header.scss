@@ -17,21 +17,33 @@
             & .notificationIcon {
                 width: 20px;
                 & img {
-                transition: all 0.3s;
+                    transition: all 0.3s;
                 }
                 &:hover{
-                & img {
-                    filter: opacity(0.8);
-                }
+                    & img {
+                        filter: opacity(0.8);
+                    }
                 }
             }
             }
             & .matchTime{
-            font-size: 10px;
+                font-size: 10px;
             }
             & .gamesLogo {
                 height: 22px;
             }
+                & .backBtn {
+                    width: 18px;
+                    height: 18px;
+                    & img {
+                        transition: all 0.3s;
+                    }
+                    &:hover{
+                        & img {
+                            filter: opacity(0.8);
+                        }
+                    }
+                }
         }
 
         .btn-close {
