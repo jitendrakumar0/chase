@@ -1,6 +1,6 @@
 @include media-breakpoint(basic) {
     .backGroundColor{
-        background: linear-gradient(0deg, rgba($info, 0.3) 0%, rgba($black, 0.2) 100%);
+        background: linear-gradient(0deg, rgba($info, 0.1) 0%, rgba($black, 0.2) 100%);
         .walletTopBar{
             & .walletHead{
     
@@ -28,7 +28,6 @@
             }
             & img{
                 height: 15px;
-                padding-left: 5px;
             }
             & .superCoinsTxt{
             }
@@ -64,6 +63,7 @@
                 height: 20px;
                 border-radius: 50%;
                 border: 1px solid lighten($success, 20);
+                background-color: $black;
                 // background-color: lighten($success, 20);
                 position: absolute;  
                 top: -35px;
@@ -90,7 +90,7 @@
                     top: -35px;
                     left: 50%;
                     transform: translate(-50%);
-                    background-image: url(/assets/img/svg/Check.svg);
+                    background-image: url(../../assets/img/svg/Check.svg);
                     background-size: 10px;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -112,12 +112,10 @@
     .walletUl{
         & .walletLi{
             background-color: lighten($color: black, $amount: 10);
-            padding: 12px 10px;
             // height: 70px;
-            & .liImage{
-                & img{
-
-                }
+            & .liImage {
+                height: 25px;
+                width: 25px;
             }
             & .lileftTxt{
                 font-size: 14px;
@@ -128,7 +126,9 @@
                 }
             }
             & .liAnchor{
-
+                width: 20px;
+                height: 20px;
+                display: inline-flex;
             }
         }
     }
