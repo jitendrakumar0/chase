@@ -1032,10 +1032,6 @@ body .overflow-auto-hidden {
   top: -35px;
   left: 50%;
   transform: translate(-50%);
-  background-image: url(/assets/img/svg/Check.svg);
-  background-size: 10px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .verificationBar .verification::before {
   content: "";
