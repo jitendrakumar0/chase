@@ -287,9 +287,6 @@
                     }
                     & .linkContent {
                         font-size: 14px;
-                        &.walletBalance {
-                            color: lighten($theme1, 10);
-                        }
                     }
                     transition: all ease-in-out 0.3s;
                     &:hover {

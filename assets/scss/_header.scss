@@ -24,6 +24,10 @@
                         filter: opacity(0.8);
                     }
                 }
+                &.exitKey {
+                    height: 20px;
+                    display: inline-flex;
+                }
             }
             }
             & .matchTime{
@@ -45,7 +49,6 @@
                     }
                 }
         }
-
         .btn-close {
             filter: invert(1);
             opacity: 1;
@@ -62,39 +65,88 @@
             & .userMailAdd, & .username {
                 font-size: 12px;
             }
-            }
         }
-        &.profileoffcanvasHeader {
-            height: 114px;
-            & .innerheader{
-            & .profile {
-                & .userImage {
-                width: 50px;
-                height: 50px;
+        }
+    }
+    .profileOffcanvas {
+        // width: 360px !important;
+        & .offcanvas-header {
+            & .offcanvas-title {
+                & .profileoffcanvasHeader {
+                    background: lighten($black, 10);
+                    height: 100px;
+                    & .innerheader{
+                    & .profile {
+                        & .userImage {
+                        border: 2px solid $theme2;
+                        width: 50px;
+                        height: 50px;
+                        }
+                    }
+                    }
+                    & .upload {
+                        right: -6%;
+                        top: 61%;
+                        width: 20px;
+                        height: 20px;
+                    & label {
+                        cursor: pointer;
+                        overflow: hidden;
+                        transition: all ease 0.5s;
+                        pointer-events: none;
+                        // & img {
+                        // filter: invert(1);
+                        // }
+                    }
+                    & .input-file {
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+                    }
+                    & .userprofilename {
+                        & .userMailAdd {
+                            & span {
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
                 }
             }
-            }
-            & .upload {
-            right: -10%;
-                top: 50%;
-                width: 20px;
-                height: 20px;
-            & label {
-                cursor: pointer;
-                overflow: hidden;
-                transition: all ease 0.5s;
-                pointer-events: none;
-                & img {
-                filter: invert(1);
+        }
+        & .offcanvas-body {
+            // background: lighten($black, 0);
+            & .innerbody {
+                & .linkBox {
+                    & .tagicon {
+                        width: 22px;
+                        height: 22px;
+                    }
+                    & .linkContent {
+                        font-size: 13px;
+                        &.walletBalance {
+                            color: lighten($theme1, 10);
+                        }
+                    }
+                    transition: all ease-in-out 0.3s;
+                    &:hover {
+                        opacity: 0.9;
+                    }
                 }
             }
-            & .input-file {
-                opacity: 0;
-                cursor: pointer;
+        }
+        & .profileFooter {
+            height: 100px;
+            background: lighten($black, 10);
+            & .contectText {
             }
+            & .addlink {
             }
         }
-        }
+    }
+    .underlines {
+        border-bottom: 0.6px solid rgba($secondary, 0.5);
+    }
 }
 @include media-breakpoint-up(sm) {}
 
