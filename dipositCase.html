@@ -69,7 +69,7 @@
         <link rel="stylesheet" href="assets/css/style.min.css" />
     </head>
     <body>
-        <main class="container-fluid transactionPage kycPage">
+        <main class="container-fluid dipositCasePage">
             <div class="row mainInner bg-black">
                 <navbar class="col-12 header d-flex align-items-center px-0">
                     <div class="row mx-0 innerheader align-items-center w-100">
@@ -91,72 +91,40 @@
                 <div class="col-12 px-0 flex-fill" data-page-name="">
                     <div class="row mx-0 h-100 flex-column flex-nowrap">
                         <div class="col-12 pt-2 pb-4 flex-fill h-100 overflow-y-auto bg-black innerBody">
-                            <div class="row mx-0 gx-1 gap-1">
-                                <div class="col-12">
-                                    <div class="row mx-0 walletUl gap-1">
-                                        <div class="col-12 walletLi position-relative py-3 rounded-2">
-                                            <div class="row mx-0">
-                                                <div class="col px-1">
-                                                    <div class="text-white fs-12">Mobile Bonus</div>
-                                                    <div class="text-white-50 fs-10">Transaction Id: CHASE-EBONUS-1679051956464</div>
-                                                    <div class="text-white-50 fs-10">19 Mar 2023 16:49</div>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <div class="transactionBonus fw-semibold fs-12">Rs 50.00</div>
-                                                </div>
+                            <form action="" class="form col-12 px-0">
+                                <div class="row mx-0 gap-3 gx-0">
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control shadow-none text-white bg-transparent fs-14" id="floatingInput" placeholder="Add Case">
+                                            <label for="floatingInput" class="text-white fs-14">Add Case</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="text-white mb-2 text-nowrap fs-14 fw-medium">Quick Add:</div>
+                                        <div class="row mx-0 align-items-center gap-2 choosePrich text-white">
+                                            <div class="col-auto px-0 form-check custom-check selecotr-item">
+                                                <input type="radio" id="radio01" name="selector1" class="form-check-input selector-item_radio">
+                                                <label for="radio01" class="selector-item_label py-1 px-4 fs-12 rounded-pill text-center w-100">+100</label>
+                                            </div>
+                                            <div class="col-auto px-0 form-check custom-check selecotr-item">
+                                                <input type="radio" id="radio02" name="selector1" class="form-check-input selector-item_radio" checked="">
+                                                <label for="radio02" class="selector-item_label py-1 px-4 fs-12 rounded-pill text-center w-100">+300</label>
+                                            </div>
+                                            <div class="col-auto px-0 form-check custom-check selecotr-item">
+                                                <input type="radio" id="radio03" name="selector1" class="form-check-input selector-item_radio">
+                                                <label for="radio03" class="selector-item_label py-1 px-4 fs-12 rounded-pill text-center w-100">+500</label>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="row mx-0 walletUl gap-1">
-                                        <div class="col-12 walletLi position-relative py-3 rounded-2">
-                                            <div class="row mx-0">
-                                                <div class="col px-1">
-                                                    <div class="text-white fs-12">Contest Joining Fee</div>
-                                                    <div class="text-white-50 fs-10">Transaction Id: CHASE-EBONUS-1679051956464</div>
-                                                    <div class="text-white-50 fs-10">19 Mar 2023 16:49</div>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <div class="transactionBonus danger fw-semibold fs-12">Rs 49.00</div>
-                                                </div>
-                                            </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control shadow-none text-white bg-transparent fs-14" id="floatingInput2" placeholder="Apply Promo Code Here">
+                                            <label for="floatingInput2" class="text-white fs-14">Apply Promo Code Here</label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="row mx-0 walletUl gap-1">
-                                        <div class="col-12 walletLi position-relative py-3 rounded-2">
-                                            <div class="row mx-0">
-                                                <div class="col px-1">
-                                                    <div class="text-white fs-12">Mobile Bonus</div>
-                                                    <div class="text-white-50 fs-10">Transaction Id: CHASE-EBONUS-1679051956464</div>
-                                                    <div class="text-white-50 fs-10">19 Mar 2023 16:49</div>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <div class="transactionBonus fw-semibold fs-12">Rs 50.00</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="row mx-0 walletUl gap-1">
-                                        <div class="col-12 walletLi position-relative py-3 rounded-2">
-                                            <div class="row mx-0">
-                                                <div class="col px-1">
-                                                    <div class="text-white fs-12">Contest Joining Fee</div>
-                                                    <div class="text-white-50 fs-10">Transaction Id: CHASE-EBONUS-1679051956464</div>
-                                                    <div class="text-white-50 fs-10">19 Mar 2023 16:49</div>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <div class="transactionBonus danger fw-semibold fs-12">Rs 49.00</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                <div class="text-center my-5"><button type="button" class="btn btn-lg fw-semibold rounded btn-theme1 px-5 fs-14">Add Case</button></div>
+                            </form>
                         </div>
                     </div>
                 </div>
