@@ -1053,28 +1053,27 @@ body .overflow-auto-hidden {
   background-color: #1a1a1a;
 }
 
-.backGroundColor {
+.walletPage .backGroundColor {
   background: linear-gradient(0deg, rgba(9, 165, 190, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
-.backGroundColor .walletTopBar .amount .walletAmount {
+.walletPage .backGroundColor .walletTopBar .amount .walletAmount {
   font-weight: 600;
 }
-.backGroundColor .walletTopBar .amount img {
+.walletPage .backGroundColor .walletTopBar .amount img {
   height: 15px;
   padding-left: 5px;
 }
-.backGroundColor .superCoinsBox img {
+.walletPage .backGroundColor .superCoinsBox img {
   height: 15px;
 }
-.banner {
+.walletPage .banner {
   width: 100%;
 }
-.banner img {
+.walletPage .banner img {
   width: 100%;
   height: 100%;
 }
-
-.verificationBar .clickBtn {
+.walletPage .verificationBar .clickBtn {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 5px;
@@ -1082,14 +1081,14 @@ body .overflow-auto-hidden {
   font-size: 12px;
   padding: 8px 15px;
 }
-.verificationBar .verification {
+.walletPage .verificationBar .verification {
   font-size: 10px;
   color: #fff;
 }
-.verificationBar .verification:first-child::before {
+.walletPage .verificationBar .verification:first-child::before {
   display: none;
 }
-.verificationBar .verification::after {
+.walletPage .verificationBar .verification::after {
   content: "";
   width: 20px;
   height: 20px;
@@ -1101,7 +1100,7 @@ body .overflow-auto-hidden {
   left: 50%;
   transform: translate(-50%);
 }
-.verificationBar .verification::before {
+.walletPage .verificationBar .verification::before {
   content: "";
   border: 1px dashed #11ff74;
   width: 41px;
@@ -1110,7 +1109,7 @@ body .overflow-auto-hidden {
   top: -26px;
   left: -21px;
 }
-.verificationBar .verification.completed::after {
+.walletPage .verificationBar .verification.completed::after {
   content: "";
   width: 20px;
   height: 20px;
@@ -1125,7 +1124,7 @@ body .overflow-auto-hidden {
   background-repeat: no-repeat;
   background-position: center;
 }
-.verificationBar .verification.completed::before {
+.walletPage .verificationBar .verification.completed::before {
   content: "";
   width: 50px;
   height: 2px;
@@ -1133,23 +1132,22 @@ body .overflow-auto-hidden {
   position: absolute;
   top: -26px;
 }
-
-.walletUl .walletLi {
+.walletPage .walletUl .walletLi {
   background-color: #1a1a1a;
 }
-.walletUl .walletLi .liImage {
+.walletPage .walletUl .walletLi .liImage {
   height: 25px;
   width: 25px;
 }
-.walletUl .walletLi .lileftTxt {
+.walletPage .walletUl .walletLi .lileftTxt {
   font-size: 14px;
   font-weight: 400;
 }
-.walletUl .walletLi .lileftTxt span {
+.walletPage .walletUl .walletLi .lileftTxt span {
   font-size: 12px;
   color: #6c757d;
 }
-.walletUl .walletLi .liAnchor {
+.walletPage .walletUl .walletLi .liAnchor {
   width: 20px;
   height: 20px;
   display: inline-flex;
@@ -1197,7 +1195,7 @@ body .overflow-auto-hidden {
 .watch img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .icon img {
