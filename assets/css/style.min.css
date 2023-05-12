@@ -1022,6 +1022,37 @@ body .overflow-auto-hidden {
   color: #fff;
 }
 
+.transactionPage .innerBody .walletUl .walletLi .transactionBonus {
+  color: #00dd5c;
+}
+.transactionPage .innerBody .walletUl .walletLi .transactionBonus.danger {
+  color: #ff051e;
+}
+
+.dipositCasePage .innerBody .choosePrich .selecotr-item .selector-item_radio {
+  appearance: none;
+  display: none;
+}
+.dipositCasePage .innerBody .choosePrich .selecotr-item .selector-item_label {
+  transition-duration: 0.5s;
+  transition-property: transform, color, box-shadow;
+  transform: none;
+  cursor: pointer;
+  border: 1px solid rgba(108, 117, 125, 0.8);
+}
+.dipositCasePage .innerBody .choosePrich .selecotr-item .selector-item_radio:checked + .selector-item_label {
+  background-color: #6c757d;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.withdrawPage .innerBody .mainCenterPart .withdrawAmount {
+  background-color: #1a1a1a;
+}
+.withdrawPage .innerBody .mainCenterPart .warningCard {
+  background-color: #1a1a1a;
+}
+
 .backGroundColor {
   background: linear-gradient(0deg, rgba(9, 165, 190, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
@@ -1135,7 +1166,7 @@ body .overflow-auto-hidden {
 }
 
 .profilePage .backimage {
-  background-image: url("../img/team1.png");
+  background-image: url("../img/mainBg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 150px;
