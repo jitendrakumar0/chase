@@ -921,8 +921,25 @@
             }
         }
     }
-
     //! *************** [ Kyc Page End] *******************
+
+    // * ************* [ Transection Page Start ] ***************
+    .transactionPage {
+        & .innerBody {
+            & .walletUl {
+                & .walletLi {
+                    & .transactionBonus {
+                        color: lighten($success, 10);
+                        &.danger {
+                            color: lighten($danger, 10);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ! ************* [ Transection Page End ] ***************
+
 
 }
 

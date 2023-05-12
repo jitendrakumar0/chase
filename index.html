@@ -74,7 +74,7 @@
                 <navbar class="col-12 header d-flex align-items-center px-0">
                     <div class="row mx-0 innerheader align-items-center w-100">
                         <div class="col-auto profile">
-                            <div class="userImage overflow-hidden"><img src="assets/img/svg/Menu.svg" class="w-100" alt="Profile"></div>
+                            <div class="userImage overflow-hidden"><img src="assets/img/svg/Menu.svg" class="w-100" alt="Profile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProfile" aria-controls="offcanvasProfile"></div>
                         </div>
                         <div class="col">
                             <div class="gamesLogo d-flex justify-content-center"><img src="assets/img/logo/whiteLogo.png" alt="logo" class="h-100"></div>
@@ -504,6 +504,92 @@
                         <div class="col px-0 bottombarTabs text-center"><a href="more.html" class="linkTab text-decoration-none"><div class="gameImg mx-auto mb-2"><img src="assets/img/svg/More.svg" class="h-100" alt="cricket"></div> <span class="gamesheading pt-1 d-flex justify-content-center">More</span></a></div>
                     </div>
                 </footer>
+                <!-- *** [ Profile Offcanvas ] ***-->
+                <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProfile" aria-controls="offcanvasProfile">
+                Button with data-bs-target
+                </button>  -->
+                
+                <div class="offcanvas offcanvas-start w-100 position-absolute border-0 profileOffcanvas px-0" tabindex="-1" id="offcanvasProfile" aria-labelledby="offcanvasProfileLabel">
+                    <div class="offcanvas-header p-0">
+                        <div class="offcanvas-title w-100" id="offcanvasProfileLabel">
+                            <div class="col-12 header profileoffcanvasHeader d-flex align-items-center px-0">
+                                <div class="row mx-0 innerheader align-items-center w-100">
+                                    <div class="col-auto profile">
+                                        <div class="userImage rounded-3 position-relative"><img src="assets/img/avtar.jpg" class="w-100 rounded-2" alt="Profile">
+                                            <div class="upload position-absolute d-inline-block">
+                                                <input class="form-control input-file p-0 position-absolute rounded-circle w-100 h-100" type="file" id="formFile" required="">
+                                                <label for="formFile" class="form-label m-0 rounded-circle w-100 h-100 bg-white d-flex justify-content-center align-items-center p-1"><img src="assets/img/img_camera.png" class="w-100" alt="Profile"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col userprofilename">
+                                        <div class="username fs-14 fw-semibold text-white text-truncate">John Methew</div>
+                                        <div class="userMailAdd d-flex align-items-center gap-2 fs-12 text-white opacity-75 text-truncate"><span class="d-inline-flex"><img src="assets/img/svg/Email.svg" class="w-100 h-100" alt=""></span> johnsuppor@example.com</div>
+                                        <div class="userMailAdd d-flex align-items-center gap-2 fs-12 text-white opacity-75 text-truncate"><span class="d-inline-flex"><img src="assets/img/svg/themeTimer.svg" class="w-100 h-100" alt=""></span> March, 2017</div>
+                                    </div>
+                                    <div class="col-auto notification d-flex justify-content-end">
+                                        <a href="javascript:;" type="button" class="notificationIcon exitKey shadow-none bg-transparent p-0 border-0" data-bs-dismiss="offcanvas" aria-label="Close"><img src="assets/img/svg/rightArrow.svg" class="w-100 h-100" alt="bell"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas-body px-0 bg-black">
+                        <div class="row g-4 innerbody mx-0">
+                            <div class="col-12 linkBox d-flex align-items-center position-relative">
+                                <div class="tagicon d-flex"><img src="assets/img/svg/profile.svg" alt="" class="w-100 h-100"></div>
+                                <div class="linkContent ms-3"><a href="javascript:;" class="text-decoration-none fw-medium text-white stretched-link">My Profile</a></div>
+                            </div>
+                            <div class="col-12 linkBox d-flex align-items-center position-relative">
+                                <div class="tagicon d-flex"><img src="assets/img/svg/Wallet.svg" alt="" class="w-100 h-100"></div>
+                                <div class="linkContent ms-3"><a href="wallet.html" class="text-decoration-none fw-medium text-white stretched-link">Wallet Balance</a></div>
+                                <div class="linkContent walletBalance text-theme2 d-block ms-auto fw-medium">Rs. 50.00</div>
+                            </div>
+                            <div class="col-12 underlines"></div>
+                            <div class="col-12 linkBox d-flex align-items-center position-relative">
+                                <div class="tagicon d-flex"><img src="assets/img/svg/referral.svg" alt="" class="w-100 h-100"></div>
+                                <div class="linkContent ms-3"><a href="inviteFriend.html" class="text-decoration-none fw-medium text-white stretched-link">My Referrals</a></div>
+                            </div>
+                            <div class="col-12 linkBox d-flex align-items-center position-relative">
+                                <div class="tagicon d-flex"><img src="assets/img/svg/star.svg" alt="" class="w-100 h-100"></div>
+                                <div class="linkContent ms-3"><a href="javascript:;" class="text-decoration-none fw-medium text-white stretched-link">Fantsy Point System</a></div>
+                            </div>
+                            <div class="col-12 underlines"></div>
+                            <div class="col-12 linkBox d-flex align-items-center position-relative">
+                                <div class="tagicon d-flex"><img src="assets/img/svg/scan.svg" alt="" class="w-100 h-100"></div>
+                                <div class="linkContent ms-3"><a href="kyc.html" class="text-decoration-none fw-medium text-white stretched-link">Kyc</a></div>
+                            </div>
+                            <div class="col-12 linkBox d-flex align-items-center position-relative">
+                                <div class="tagicon d-flex"><img src="assets/img/svg/howToPlay.svg" alt="" class="w-100 h-100"></div>
+                                <div class="linkContent ms-3"><a href="javascript:;" class="text-decoration-none fw-medium text-white stretched-link">How To Play</a></div>
+                            </div>
+                            <div class="col-12 linkBox d-flex align-items-center position-relative">
+                                <div class="tagicon d-flex"><img src="assets/img/svg/Policy.svg" alt="" class="w-100 h-100"></div>
+                                <div class="linkContent ms-3"><a href="javascript:;" class="text-decoration-none fw-medium text-white stretched-link">Privacy Policy</a></div>
+                            </div>
+                            <div class="col-12 underlines"></div>
+                            <div class="col-12 linkBox d-flex align-items-center position-relative">
+                                <div class="tagicon d-flex"><img src="assets/img//svg/warning.svg" alt="" class="w-100 h-100"></div>
+                                <div class="linkContent ms-3"><a href="javascript:;" class="text-decoration-none fw-medium text-white stretched-link">Disclaimer</a></div>
+                            </div>
+                            <div class="col-12 linkBox d-flex align-items-center position-relative">
+                                <div class="tagicon d-flex"><img src="assets/img/svg/help.svg" alt="" class="w-100 h-100"></div>
+                                <div class="linkContent ms-3"><a href="javascript:;" class="text-decoration-none fw-medium text-white stretched-link">Support</a></div>
+                            </div>
+                            <div class="col-12 linkBox d-flex align-items-center position-relative">
+                                <div class="tagicon d-flex"><img src="assets/img/svg/logout.svg" alt="" class="w-100 h-100"></div>
+                                <div class="linkContent ms-3"><a href="javascript:;" class="text-decoration-none fw-medium text-white stretched-link">Logout</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas-footer profileFooter d-flex align-items-center">
+                        <div class="row gap-1 mx-0">
+                            <div class="col-12 fw-medium fs-14 text-theme2 contectText">Contact any help</div>
+                            <div class="col-12"><a href="mailto: chase@example.com" class="text-white addlink fs-12 d-flex">Email :- chase@example.com</a></div>
+                            <div class="col-12"><a href="tel: 9587979748" class="text-white addlink fs-12 d-flex">Call :- 1800-1200-1200</a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
