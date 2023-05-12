@@ -921,8 +921,91 @@
             }
         }
     }
-
     //! *************** [ Kyc Page End] *******************
+
+    // * ************* [ Transection Page Start ] ***************
+    .transactionPage {
+        & .innerBody {
+            & .walletUl {
+                & .walletLi {
+                    & .transactionBonus {
+                        color: lighten($success, 10);
+                        &.danger {
+                            color: lighten($danger, 10);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ! ************* [ Transection Page End ] ***************
+
+    // * ************* [ Diposit Case Page Start ] ***************
+    .dipositCasePage {
+        & .innerBody{
+            & .choosePrich {
+                & .selecotr-item {
+                    & .selector-item_radio {
+                        appearance: none;
+                        display: none;
+                    }
+                    & .selector-item_label {
+                        transition-duration: 0.5s;
+                        transition-property: transform, color, box-shadow;
+                        transform: none;
+                        cursor: pointer;
+                        border: 1px solid rgba($secondary, 0.8);
+                    }
+                    & .selector-item_radio:checked + .selector-item_label {
+                        // background-image: linear-gradient(to right, $theme1, $theme2);
+                        background-color: rgba($secondary, 1);
+                        color: $white;
+                        transform: translateY(-1px);
+                    }
+                    // &.reportItem {
+                    //     & .selector-item_label {
+                    //         border: 2px solid transparent;
+                    //     }
+                    //     & .liveUserImg {
+                    //         border: 2px solid transparent;
+                    //     }
+                    //     & .selector-item_radio:checked + .selector-item_label {
+                    //         background-image: none;
+                    //         border-color: $theme1;
+                    //         background-color: $light;
+                    //         & .liveUserImg {
+                    //             border-color: $danger;
+                    //         }
+                    //         & .card-title {
+                    //             color: $danger !important;
+                    //         }
+                    //     }
+                    // }
+                    //     &.reportreason {
+                    //     & .selector-item_label {
+                    //         border: 2px solid rgba($secondary, 0.2);
+                    //     }
+                    //     }
+                }
+            }
+        }
+    }
+    // ! ************* [ Diposit Case Page End ] ***************
+
+    // * ************* [ Withdrow Page Start ] ***************
+    .withdrawPage{
+        & .innerBody {
+            & .mainCenterPart {
+                & .withdrawAmount {
+                    background-color: lighten($black , 10);
+                }
+                & .warningCard {
+                    background-color: lighten($black , 10);
+                }
+            }
+        }
+    }
+    // ! ************* [ Withdrow Page End ] ***************
 
 }
 
