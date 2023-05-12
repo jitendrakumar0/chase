@@ -1132,4 +1132,60 @@ body .overflow-auto-hidden {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.profilePage .backimage {
+  background-image: url("../img/team1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+.profilePage .profileLabel {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: -40px;
+}
+.profilePage .profileLabel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profilePage .profileDetail span {
+  width: 14px;
+  height: 14px;
+}
+
+.watch {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+.watch img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon img {
+  height: 40px;
+}
+
+.backBg {
+  background-color: #1a1a1a;
+}
+.backBg .borderBottom {
+  border-bottom: 0.6px solid rgba(108, 117, 125, 0.5);
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }/*# sourceMappingURL=style.min.css.map */
