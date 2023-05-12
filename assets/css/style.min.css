@@ -1166,7 +1166,7 @@ body .overflow-auto-hidden {
 }
 
 .profilePage .backimage {
-  background-image: url("../img/mainBg.jpg");
+  background-image: url("../img/matchWon.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 150px;
@@ -1177,6 +1177,7 @@ body .overflow-auto-hidden {
   overflow: hidden;
   border-radius: 5px;
   margin-top: -40px;
+  border: 1px solid #fff;
 }
 .profilePage .profileLabel img {
   width: 100%;
