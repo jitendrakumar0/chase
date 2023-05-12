@@ -940,7 +940,7 @@
     }
     // ! ************* [ Transection Page End ] ***************
 
-    // * ************* [ Diposit Case Page End ] ***************
+    // * ************* [ Diposit Case Page Start ] ***************
     .dipositCasePage {
         & .innerBody{
             & .choosePrich {
@@ -992,6 +992,20 @@
     }
     // ! ************* [ Diposit Case Page End ] ***************
 
+    // * ************* [ Withdrow Page Start ] ***************
+    .withdrawPage{
+        & .innerBody {
+            & .mainCenterPart {
+                & .withdrawAmount {
+                    background-color: lighten($black , 10);
+                }
+                & .warningCard {
+                    background-color: lighten($black , 10);
+                }
+            }
+        }
+    }
+    // ! ************* [ Withdrow Page End ] ***************
 
 }
 
