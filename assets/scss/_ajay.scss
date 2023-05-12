@@ -985,6 +985,7 @@
         & .innerBody {
             & .walletUl {
                 & .walletLi {
+                    background-color: lighten($black, 10);
                     & .transactionBonus {
                         color: lighten($success, 10);
                         &.danger {
