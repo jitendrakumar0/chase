@@ -470,33 +470,40 @@
                         <div class="col px-0 bottombarTabs text-center"><a href="more.html" class="linkTab text-decoration-none"><div class="gameImg mx-auto mb-2"><img src="assets/img/svg/More.svg" class="h-100" alt="cricket"></div> <span class="gamesheading pt-1 d-flex justify-content-center">More</span></a></div>
                     </div>
                 </footer> -->
-                <div class="toast-container questionPopup position-fixed bottom-0 end-0 px-0 py-2" >
-                    <div id="liveToast" class="toast border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-                        <div class="toast-header gap-2 px-3">
-                            <select class="form-select fs-14 text-white shadow-none w-auto" aria-label="Default select example">
+                <div class="toast-container questionPopup position-fixed bottom-0 end-0 p-0" >
+                    <div id="liveToast" class="toast border-0 rounded-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                        <div class="toast-header border-0 gap-2 px-3 rounded-0">
+                            <!-- <select class="form-select fs-14 text-white border-0 shadow-none w-auto" aria-label="Default select example">
                                 <option selected>Betslip</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Betslip</option>
-                            </select>
-                            <div class="form-check form-switch m-0 align-items-center gap-2">
-                                <input class="form-check-input shadow-none" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                <label class="form-check-label fs-10 text-white ms-2" for="flexSwitchCheckDefault">QUICK BET</label>
+                            </select> -->
+                            <div class="dropdown-center dropdownbtn">
+                                <button class="btn btn-secondary w-100 border-0 d-flex align-items-center gap-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="d-inline-flex"><img src="assets/img/svg/toistdropdown.svg" class="w-100" alt=""></span> Chase</button>
+                                <!-- <ul class="dropdown-menu fs-12 border-0">
+                                    <li><a class="dropdown-item" href="javascript:;">One</a></li>
+                                    <li><a class="dropdown-item" href="javascript:;">Two</a></li>
+                                    <li><a class="dropdown-item" href="javascript:;">Betslip</a></li>
+                                </ul> -->
                             </div>
-                            <button type="button" class="bg-transparent p-0 shadow-none border-0 ms-auto text-white" data-bs-dismiss="toast" aria-label="Close"><img src="assets/img/svg/Close.svg" class="w-100" alt=""></button>
-                        </div>
-                        <div class="toast-body text-white">
-                            <div class="row mx-1 toistCard align-items-center rounded-2 py-2 mb-3">
-                                <div class="col-auto"><button type="button" class="btn closeImg p-0 border-0 bg-transparent" disabled><img src="assets/img/svg/Close.svg" class="w-100" alt=""></button></div>
-                                <div class="col">
-                                    <div class="row mx-0 gx-0 gap-2">
-                                        <div class="col-12 fs-12 fw-medium d-flex align-items-center gap-1"><div class="teamLogo d-inline-flex"><img src="assets/img/svg/Ball.svg" class="w-100" alt=""></div>Chennai Super Kings</div>
-                                        <div class="col-12 fs-10">Chennai Super Kings vs Delhi Capitals Winner (incl. super over)</div>
-                                        <div class="col-12 fs-14 fw-medium d-flex align-items-center gap-2 justify-content-between">1.66 <div class="inputgroup"><input type="text" class="form-control shadow-none border-0 text-end fs-10 fw-medium text-black" value="60"></div></div>
-                                    </div>
+                            <!-- <div class="tcChack w-100">
+                                <div class="form-check form-switch m-0 align-items-center d-flex gap-2 p-0 justify-contentend">
+                                    <input class="form-check-input shadow-none border-0" type="checkbox" role="switch" id="sccepttc">
+                                    <label class="form-check-label fs-10 text-white fw-semibold me-4 pe-2 fs-12 mt-1 " for="sccepttc">QUICK BET</label>
                                 </div>
-                            </div>
-                            <div class="row mx-0 align-items-center g-2  choosePrich mb-3">
+                            </div> -->
+                            <!-- <div class="form-check form-switch m-0 align-items-center gap-2">
+                                <input class="form-check-input shadow-none " type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                <label class="form-check-label fs-10 text-white ms-2" for="flexSwitchCheckDefault">QUICK BET</label>
+                            </div> -->
+                            <!-- <button type="button" class="bg-transparent p-0 shadow-none border-0 ms-auto text-white" data-bs-dismiss="toast" aria-label="Close"><img src="assets/img/svg/Close.svg" class="w-100" alt=""></button> -->
+                        </div>
+                        <div class="toast-body text-black bg-white">
+                            <div class="row mx-0 align-items-center g-2 choosePrich mb-3">
+                                <div class="col-12 fs-12">
+                                    QuickBet mode is on! After single click on any selection, it will place  your bet immediatly. See all your bets on My Best Page
+                                </div>
                                 <div class="col form-check  custom-check px-1 selecotr-item">
                                     <input type="radio" id="radio01" name="selector1" class="form-check-input selector-item_radio">
                                     <label for="radio01" class="selector-item_label py-1 px-2 fs-14 rounded-pill text-center w-100">30</label>
@@ -514,15 +521,29 @@
                                     <label for="radio04" class="selector-item_label py-1 px-2 fs-14 rounded-pill text-center w-100">200</label>
                                 </div>
                             </div>
-                            <div class="row mx-0 gx-0 gap-1 mb-3">
+                            <div class="row mx-1 toistCard align-items-center rounded-2 py-2 mb-3">
+                                <!-- <div class="col-auto"><button type="button" class="btn closeImg p-0 border-0 bg-transparent" disabled><img src="assets/img/svg/Close.svg" class="w-100" alt=""></button></div> -->
+                                <div class="col px-0">
+                                    <div class="row mx-0 gx-0 gap-2">
+                                        <!-- <div class="col-12 fs-12 fw-medium d-flex align-items-center gap-1"><div class="teamLogo d-inline-flex"><img src="assets/img/svg/Ball.svg" class="w-100" alt=""></div>Chennai Super Kings</div>
+                                        <div class="col-12 fs-10">Chennai Super Kings vs Delhi Capitals Winner (incl. super over)</div> -->
+                                        <div class="col-12 fs-14 fw-medium dflex align-itemscenter gap2 justify-contentbetween"><div class="inputgroup"><input type="text" class="form-control shadow-none w-100 text-end fs-14 fw-medium text-black" value="60 ₹"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mx-0 align-items-center">
+                                <div class="col-auto d-flex"><div class="switchImg rounded-circle overflow-hidden d-inline-flex"><img src="assets/img/svg/Charge1.svg" alt="" class="w-100"></div></div>
+                                <div class="col fs-12 text-black ps-0">Quick Bet is active with 10 ₹  bet</div>
+                            </div>
+                            <!-- <div class="row mx-0 gx-0 gap-1 mb-3">
                                 <div class="col-12">
-                                    <div class="row mx-0 align-items-center fs-12 text-white-50">
+                                    <div class="row mx-0 align-items-center fs-12 text-black-50">
                                         <div class="col">Total bet</div>
                                         <div class="col-auto ">14</div>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="row mx-0 align-items-center fs-13 text-white">
+                                    <div class="row mx-0 align-items-center fs-13 text-black">
                                         <div class="col text-uppercase">POTENTIAL WIN</div>
                                         <div class="col-auto ">25.17</div>
                                     </div>
@@ -537,10 +558,10 @@
                                 <div class="col-12 tcChack">
                                     <div class="form-check form-switch m-0 align-items-center d-flex p-0 justify-content-end">
                                         <input class="form-check-input shadow-none" type="checkbox" role="switch" id="sccepttc">
-                                        <label class="form-check-label fs-10 text-white me-5 fs-12 " for="sccepttc">Accept odds changes</label>
+                                        <label class="form-check-label fs-10 text-black me-5 fs-12 " for="sccepttc">Accept odds changes</label>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

@@ -710,15 +710,38 @@
     }
     .questionPopup {
         transition:  0.3s all ease-in-out;
-        background-color: lighten($black, 20);
+        // background-color: lighten($black, 20);
         & .toast, & .form-select, & .toast-header {
-            background-color: lighten($black, 20);
+            // background-color: lighten($black, 20);
             & .toast-header {
-                & .form-select {
-                    appearance: auto;
-                    background: lighten($black, 20);
-                    &:focus{
-                        border-color: $white;
+                background: linear-gradient(86deg, $theme1 0%, $theme2 100%);
+                // & .form-select {
+                //     appearance: auto;
+                //     background: linear-gradient(86deg, $primary 0%, rgba(0,212,255,1) 100%);
+                //     &:focus{
+                //         border-color: $white;
+                //     }
+                // }
+                & .dropdownbtn {
+                    & .dropdown-toggle {
+                        background: transparent !important;
+                        & span {
+                            width: 22px;
+                        }
+                    }
+                    & .dropdown-menu {
+                        & li {
+                            & .dropdown-item {
+                                &:hover{
+                                    background: lighten($black, 10);
+                                    color: $white;
+                                }
+                                &:active{
+                                    background: lighten($black, 10);
+                                    color: $white;
+                                }
+                            }
+                        }
                     }
                 }
                 & .form-switch {
@@ -745,7 +768,7 @@
             }
             & .toast-body {
                 & .toistCard {
-                    background-color: lighten($black, 50);
+                    // background-color: lighten($black, 50);
                     & .closeImg {
                         width: 18px;
                     }
@@ -757,7 +780,10 @@
                     }
                     & .inputgroup {
                         & .form-control{
-                            max-width: 100px;
+                            // max-width: 100px;
+                            &:focus{
+                                border-color:  lighten($secondary, 40);
+                            }
                         }
                     }
                 }
@@ -811,26 +837,30 @@
                         width: 17px;
                     }
                 }
-                & .tcChack {
-                    & .form-switch {
-                        flex-direction: row-reverse;
-                        & .form-check-label {
-                            line-height: 100%;
+                & .switchImg {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            & .tcChack {
+                & .form-switch {
+                    flex-direction: row-reverse;
+                    & .form-check-label {
+                        line-height: 100%;
+                    }
+                    & .form-check-input{
+                        height: 20px;
+                        width: 40px;
+                        cursor: pointer;
+                        &:focus{
+                        border-color: rgba($black, 0.3) !important;
+                        filter: grayscale(1);
                         }
-                        & .form-check-input{
-                            height: 20px;
-                            width: 40px;
-                            cursor: pointer;
-                            &:focus{
-                            border-color: rgba($black, 0.3) !important;
-                            filter: grayscale(1);
-                            }
-                        &:checked {
-                            background-color: $theme2;
-                            border-color: $theme2 !important;
-                            filter: grayscale(0);
-                        }
-                        }
+                    &:checked {
+                        background-color: $theme2;
+                        border-color: $theme2 !important;
+                        filter: grayscale(0);
+                    }
                     }
                 }
             }
