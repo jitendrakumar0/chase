@@ -1074,6 +1074,10 @@
         & .mainCenterPart {
             & .notificationCard {
                 background-color: lighten($black, 10);
+                & .contactImg {
+                    width: 32px;
+                    height: 32px;
+                }
             }
         }
     }
