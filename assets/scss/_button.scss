@@ -30,6 +30,18 @@
     }
 }
 
+.btn-theme1 {
+    background-color: $theme1 !important;
+    color: $white !important;
+    // &:hover{
+    //     background-color: darken($theme1, 5) !important;
+    // }
+}
+
+
+.btn {
+    font-size: 14px;
+}
 
 
 .fs-10{font-size: 10px;}

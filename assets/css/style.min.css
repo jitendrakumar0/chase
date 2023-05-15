@@ -222,6 +222,7 @@ body .overflow-auto-hidden {
   height: 22px;
 }
 .header .innerheader .backBtn {
+  cursor: pointer;
   width: 18px;
   height: 18px;
 }
@@ -351,8 +352,7 @@ body .overflow-auto-hidden {
   border-color: #fff;
 }
 .form .form-floating .form-control:-webkit-autofill, .form .form-floating .form-control:-webkit-autofill:hover, .form .form-floating .form-control:-webkit-autofill:focus {
-  border: none;
-  -webkit-text-fill-color: #000;
+  -webkit-text-fill-color: #fff;
   transition: background-color 5000s ease-in-out 0s;
 }
 .form .form-check .form-check-input {
@@ -398,6 +398,15 @@ body .overflow-auto-hidden {
   aspect-ratio: 10/10;
   width: 45px;
   height: 45px;
+}
+
+.btn-theme1 {
+  background-color: #68421d !important;
+  color: #fff !important;
+}
+
+.btn {
+  font-size: 14px;
 }
 
 .fs-10 {
@@ -700,6 +709,47 @@ body .overflow-auto-hidden {
 }
 .quizInformationPage .innerbody .quizUserCard:hover::before {
   width: 100%;
+}
+.quizInformationPage .innerbody .cricketheader {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1) !important;
+  z-index: 1;
+}
+.quizInformationPage .innerbody .cricketheader .navtab .nav-item .nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+  border-bottom: 0.6px solid transparent;
+}
+.quizInformationPage .innerbody .cricketheader .navtab .nav-item .nav-link .gameImg {
+  height: 20px;
+}
+.quizInformationPage .innerbody .cricketheader .navtab .nav-item .nav-link .gameImg img {
+  filter: grayscale(1);
+  transition: all 0.3s;
+}
+.quizInformationPage .innerbody .cricketheader .navtab .nav-item .nav-link .gamesheading {
+  line-height: 100%;
+}
+.quizInformationPage .innerbody .cricketheader .navtab .nav-item .nav-link.active {
+  background: transparent;
+  border-color: #cccccc;
+  color: #fff !important;
+}
+.quizInformationPage .innerbody .cricketheader .navtab .nav-item .nav-link.active .gameImg img {
+  filter: grayscale(0);
+}
+.quizInformationPage .innerbody .cricketheader .navtab .nav-item .nav-link:hover {
+  color: #fff !important;
+}
+.quizInformationPage .innerbody .cricketheader .navtab .nav-item .nav-link:hover .gameImg img {
+  filter: grayscale(0);
+}
+.quizInformationPage .innerbody .tabContents .table tbody tr {
+  border-bottom: 0.6px solid #6d767e !important;
+}
+.quizInformationPage .innerbody .tabContents .table tbody tr .teamDetail .imgOuter {
+  width: 32px;
+  height: 32px;
 }
 
 .informationOffcanvas {
@@ -1022,6 +1072,9 @@ body .overflow-auto-hidden {
   color: #fff;
 }
 
+.transactionPage .innerBody .walletUl .walletLi {
+  background-color: #1a1a1a;
+}
 .transactionPage .innerBody .walletUl .walletLi .transactionBonus {
   color: #00dd5c;
 }
@@ -1051,6 +1104,10 @@ body .overflow-auto-hidden {
 }
 .withdrawPage .innerBody .mainCenterPart .warningCard {
   background-color: #1a1a1a;
+}
+.withdrawPage .innerBody .mainCenterPart .warningCard .bankImg {
+  width: 50px;
+  height: 50px;
 }
 
 .walletPage .backGroundColor {
@@ -1163,28 +1220,57 @@ body .overflow-auto-hidden {
   object-fit: contain;
 }
 
-.profilePage .backimage {
+.profilePage .userProfile {
+  background-color: #1a1a1a;
+}
+.profilePage .userProfile .backimage {
   background-image: url("../img/matchWon.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 150px;
 }
-.profilePage .profileLabel {
+.profilePage .userProfile .profileLabel {
   width: 80px;
   height: 80px;
-  overflow: hidden;
-  border-radius: 5px;
   margin-top: -40px;
-  border: 1px solid #fff;
 }
-.profilePage .profileLabel img {
+.profilePage .userProfile .profileLabel img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.profilePage .profileDetail span {
-  width: 14px;
-  height: 14px;
+.profilePage .userProfile .profileDetail .UserImG {
+  width: 15px;
+  height: 15px;
+}
+.profilePage .watch {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  padding: 2px;
+}
+.profilePage .watch img {
+  width: 100%;
+  height: 100%;
+}
+.profilePage .icon img {
+  height: 40px;
+}
+.profilePage .backBg {
+  background-color: #1a1a1a;
+}
+.profilePage .backBg .borderBottom {
+  border-bottom: 0.6px solid rgba(108, 117, 125, 0.5);
+}
+.profilePage .banner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.profilePage .banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .watch {
