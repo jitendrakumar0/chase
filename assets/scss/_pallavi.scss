@@ -206,6 +206,48 @@
             }
         }
     }
+    .watch{
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .icon{
+        & img{
+            height: 40px;
+        }
+    }
+    .backBg{
+        background-color: lighten($black , 10);
+        & .borderBottom{
+            border-bottom: 0.6px solid rgba($secondary, 0.5);
+        }
+    }
+    .banner{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .modalBody{
+        padding: 20px  0px !important;
+        & .formSelect{
+            height: calc(3.1rem + 2px);
+            background-image: url(../img/svg/downarrow.svg);
+            &:checked{
+                background-color:lighten($black , 10) !important ;
+                color: $white !important;
+            }
+        }
+    }
 }
 @include media-breakpoint-up(sm) {}
 
