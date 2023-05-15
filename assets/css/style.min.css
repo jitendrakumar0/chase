@@ -1313,7 +1313,36 @@ body .overflow-auto-hidden {
   height: calc(3.1rem + 2px);
   background-image: url(../img/svg/downarrow.svg);
 }
-.modalBody .formSelect:checked {
-  background-color: #1a1a1a !important;
-  color: #fff !important;
+
+.liveMatch .matchesCard {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+  background-color: #1a1a1a;
+}
+.liveMatch .matchesCard .card-body .teamHeadline {
+  border-bottom: 0.6px solid rgba(108, 117, 125, 0.5) !important;
+}
+.liveMatch .matchesCard .card-body .teamHeadline .matchteams, .liveMatch .matchesCard .card-body .teamHeadline .notificationOut {
+  font-size: 12px;
+}
+.liveMatch .matchesCard .card-body .teamHeadline .matchteams img, .liveMatch .matchesCard .card-body .teamHeadline .notificationOut img {
+  height: 15px;
+}
+.liveMatch .matchesCard .card-body .firstMatchBody .textColour {
+  color: #ff051e;
+}
+.liveMatch .matchesCard .card-body .firstMatchBody1 .progressBarMain {
+  height: 6px;
+}
+.liveMatch .matchesCard .card-body .firstMatchBody1 .borderBottom {
+  border-bottom: 0.6px solid rgba(108, 117, 125, 0.5);
+}
+.liveMatch .matchesCard .card-body .firstMatchBody1 .inviteBtn {
+  font-size: 12px !important;
+}
+.liveMatch .matchesCard .card-body .firstMatchBody1 .textColour {
+  color: #ff051e;
+}
+.liveMatch .matchesCard .card-body .firstMatchBody1 .Team {
+  width: 25px;
+  height: 25px;
 }/*# sourceMappingURL=style.min.css.map */

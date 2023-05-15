@@ -242,9 +242,54 @@
         & .formSelect{
             height: calc(3.1rem + 2px);
             background-image: url(../img/svg/downarrow.svg);
-            &:checked{
-                background-color:lighten($black , 10) !important ;
-                color: $white !important;
+        }
+    }
+    .liveMatch{
+        .matchesCard {
+            box-shadow: 0px 0px 6px rgba($black, 0.08);
+            background-color: lighten($black, 10);
+            & .card-body {
+                & .teamHeadline {
+                    border-bottom: 0.6px solid rgba($secondary, 0.5) !important;
+                    & .matchteams,
+                    & .notificationOut {
+                        font-size: 12px;
+                        // padding-bottom: 15px;
+                        & img{
+                            height: 15px;
+                        }
+                    }
+                    & .star{
+                        & img{
+
+                        }
+                    }
+                }
+                & .firstMatchBody{
+                    & .textColour{
+                        color: lighten($color: $red, $amount: 10);
+                    }
+                }
+                & .firstMatchBody1{
+                    & .progressBarMain{
+                        height: 6px;
+                    }
+                    & .progressBar{
+                    }
+                    & .borderBottom{
+                        border-bottom: 0.6px solid rgba($secondary, 0.5);
+                    }
+                    & .inviteBtn{
+                        font-size: 12px !important;
+                    }
+                    & .textColour{
+                        color: lighten($color: $red, $amount: 10);
+                    }
+                    & .Team{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
             }
         }
     }
