@@ -150,7 +150,7 @@
     // profile page
     .profilePage {
         & .userProfile{
-            
+            background-color: lighten($black, 10);
             & .backimage{
                 background-image: url('../img/matchWon.jpg');
                 background-size: cover;
