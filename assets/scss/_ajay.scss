@@ -1069,5 +1069,16 @@
     }
     // ! ************* [ Withdrow Page End ] ***************
 
+    // * *************** [Notification Page Start] ***************
+    .notificationPage{
+        & .mainCenterPart {
+            & .notificationCard {
+                background-color: lighten($black, 10);
+            }
+        }
+    }
+    // ! *************** [Notification Page End] ***************
+
+
 }
 
