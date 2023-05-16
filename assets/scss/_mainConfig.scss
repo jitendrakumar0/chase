@@ -196,6 +196,11 @@
   }
 }
 
+.flex-fill{
+  &.overflow-y-auto{
+    overflow-x: hidden;
+  }
+}
 
 .modal-content, .offcanvas {
   background-color: lighten($black, 20) !important;
