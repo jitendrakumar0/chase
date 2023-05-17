@@ -564,6 +564,16 @@
             }
             & .tabContents {
                 & .table {
+                    & thead {
+                        & tr {
+                            & th {
+                                & .icon {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                    }
                     & tbody {
                         & tr {
                             border-bottom: 0.6px solid lighten($secondary, 0.5) !important;
