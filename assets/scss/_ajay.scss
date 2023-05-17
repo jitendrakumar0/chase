@@ -1113,6 +1113,25 @@
     }
     // ! *************** [Notification Page End] ***************
 
+    // * *************[ Payment Page ] ******************
+    .paymentPage {
+        & .innerBody {
+            & .paymentCard {
+                & .paymentInnerBody {
+                    background-color: lighten($black, 10);
+                    & .card-body {
+                        & .paymentImg {
+                            border: 2px solid lighten($black, 10);
+                            height: 40px;
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ! *************[ Payment Page End ] **************
+
 
 }
 
