@@ -40,6 +40,28 @@
                     width: 20px;
                     height: 20px;
                 }
+                & .hiddenImg {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                & .passwordText {
+                    width: 20px;
+                    height: 100%;
+                    position: relative;
+                    & img{
+                        position: absolute;
+                        inset: 0;
+                        margin: auto;
+                    }
+                    & .hiddenImg {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    & .showImg {
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
             }
         }
     }
