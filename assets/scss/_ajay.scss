@@ -364,6 +364,10 @@
                 & .notificationOut {
                     font-size: 12px;
                 }
+                & .matchteams {
+                    color: $white !important;
+                    font-weight: 600 !important;
+                }
                 & .notificationOut {
                     background: lighten($success, 5);
                     & span{
@@ -404,8 +408,8 @@
                 }
                 & .team {
                     & .teamLogo {
-                        width: 32px;
-                        height: 32px;
+                        width: 40px;
+                        height: 40px;
                         z-index: 0;
                         &::before {
                             content: "";
