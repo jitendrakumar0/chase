@@ -631,6 +631,30 @@
             }
         }
     }
+    .mybetsCard {
+        background: linear-gradient(0deg, lighten($black, 10) 0%, lighten($black, 4) 100%);
+        & .card-body{
+            & .case {
+                & .caseHeading {
+                    color: lighten($success, 5);
+                    &.wonBtn {
+                        border: 2px solid lighten($success, 5);
+                        &.defeat {
+                            color: lighten($danger, 5);
+                            border-color: lighten($danger, 5);
+                        }
+                    }
+                    
+                }
+                & .caseEntry {
+                    & span {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+    }
     //! ************ [ Quiz Information Page End ] ******************
     
     // ************* [ QuestionPage Page Start ] ******************
